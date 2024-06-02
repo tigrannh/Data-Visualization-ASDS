@@ -20,6 +20,8 @@ data['longitude'] = data['longitude'].astype('float64')
 
 
 app = dash.Dash(__name__)
+server = app.server
+
 
 app.layout = html.Div([
     html.Nav([
