@@ -20,7 +20,6 @@ data['longitude'] = data['longitude'].astype('float64')
 
 
 app = dash.Dash(__name__)
-server = app.server
 
 
 app.layout = html.Div([
@@ -137,5 +136,6 @@ def update_city_comparison(city1, city2):
 
     return fig
 
+
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host='0.0.0.0',debug=True, port=8090)
