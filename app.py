@@ -7,7 +7,7 @@ import dash_auth
 #VALID_USERNAME_PASSWORD_PAIRS = {"hello": "world"}
 
 app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server=app.server
 #auth = dash_auth.BasicAuth(app, VALID_USERNAME_PASSWORD_PAIRS)
 
 navbar = dbc.NavbarSimple(
