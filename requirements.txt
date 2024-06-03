@@ -10,3 +10,5 @@ plotly
 numpy
 gunicorn
 matplotlib
+dash_auth
+dash_bootstrap_components
